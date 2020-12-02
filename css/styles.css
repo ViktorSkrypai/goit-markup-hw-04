@@ -362,28 +362,19 @@ img {
   width: 170px;
   height: 90px;
   border-radius: 4px;
-  background-repeat: no-repeat;
+}
+
+.list-icon {
+  width: 45px;
+  height: 50px;
   background-position: center;
 }
 
-.first-comp {
-  background-image: url("../images/comp1.svg");
+.list-icon:hover,
+.list-icon:focus {
+  fill: var(--accent-color);
 }
-.second-comp {
-  background-image: url("../images/comp2.svg");
-}
-.third-comp {
-  background-image: url("../images/comp3.svg");
-}
-.fourth-comp {
-  background-image: url("../images/comp4.svg");
-}
-.fifth-comp {
-  background-image: url("../images/comp5.svg");
-}
-.sixth-comp {
-  background-image: url("../images/comp6.svg");
-}
+
 /*Footer*/
 
 .footer {
