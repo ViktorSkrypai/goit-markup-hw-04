@@ -59,6 +59,9 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid var(--header-border-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -242,22 +245,6 @@ img {
   margin-bottom: 30px;
 }
 
-.icon-satelite::before {
-  background-image: url("../images/satelite.svg");
-}
-
-.icon-clock::before {
-  background-image: url("../images/clock.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/diagram.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/astronaut.svg");
-}
-
 .features .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -302,6 +289,9 @@ img {
   background-color: var(--secondary-grey-bg-color);
   padding-top: 95px;
   padding-bottom: 95px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-team {
@@ -362,12 +352,14 @@ img {
   width: 170px;
   height: 90px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .list-icon {
   width: 45px;
   height: 50px;
-  background-position: center;
+  margin-left: 63px;
+  margin-top: 20px;
 }
 
 .list-icon:hover,
@@ -381,9 +373,13 @@ img {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.footer-content {
+.footer-container {
   display: flex;
   align-content: baseline;
 }
@@ -401,14 +397,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer-adress .link {
+.footer-contact-adress {
   color: var(--secondary-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
-
 .footer-contact {
   display: inline-flex;
 
@@ -436,9 +431,16 @@ img {
 .footer-contact:focus {
   color: var(--accent-color);
 }
+
+.footer-contact-adress:hover,
+.footer-contact-adress:focus {
+  color: var(--accent-color);
+}
+
 .social-container {
   margin-left: 70px;
 }
+
 .join-us {
   display: inline-flex;
   font-weight: 700;
@@ -459,29 +461,16 @@ img {
   height: 44px;
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .social-buttons .item:last-child {
   margin-right: 0px;
 }
 
-.insta-logo {
-  background-image: url("../images/instagram.svg");
-}
-.twitter-logo {
-  background-image: url("../images/twitter.svg");
-}
-.facebook-logo {
-  background-image: url("../images/facebook.svg");
-}
-
-.linkidn-logo {
-  background-image: url("../images/linkedin.svg");
+.list-ico {
+  margin: 12px;
 }
 
 .social-buttons .item:hover,
