@@ -467,6 +467,12 @@ img {
   display: flex;
 }
 
+.social-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .social-buttons .item:last-child {
   margin-right: 0px;
 }
