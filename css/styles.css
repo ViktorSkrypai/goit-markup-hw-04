@@ -463,15 +463,17 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  align-items: center;
+  display: flex;
 }
 
 .social-buttons .item:last-child {
   margin-right: 0px;
 }
 
-.list-ico {
+/*.list-ico {
   margin: 12px;
-}
+}*/
 
 .social-buttons .item:hover,
 .social-buttons .item:focus {
