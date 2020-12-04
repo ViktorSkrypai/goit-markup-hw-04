@@ -517,6 +517,7 @@ img {
   justify-content: center;
   align-items: center;
   display: flex;
+  fill: var(--secondary-text-color);
 }
 
 .social-buttons .item:last-child {
