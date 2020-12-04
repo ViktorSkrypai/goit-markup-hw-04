@@ -92,6 +92,7 @@ img {
 
 .header-adress {
   display: flex;
+  align-items: center;
 }
 
 .adress-container {
@@ -113,6 +114,17 @@ img {
 .header-adress .item:last-child {
   margin-right: 0px;
 }
+
+.nav-svg {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.nav-svggg:hover,
+.nav-svggg:focus {
+  color: var(--accent-color);
+}
+
 /*------------------------------------------------------------------*/
 .site-nav .link.is-current {
   color: var(--accent-color);
