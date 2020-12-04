@@ -120,11 +120,6 @@ img {
   margin-right: 10px;
 }
 
-.nav-svggg:hover,
-.nav-svggg:focus {
-  color: var(--accent-color);
-}
-
 /*------------------------------------------------------------------*/
 .site-nav .link.is-current {
   color: var(--accent-color);
@@ -147,8 +142,7 @@ img {
 }
 
 .header-adress .adress-link {
-  display: block;
-
+  display: flex;
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -156,11 +150,18 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .adress-link:hover,
 .adress-link:focus {
   color: var(--accent-color);
+}
+
+.adress-link:hover .nav-svg,
+.adress-link:focus .nav-svg {
+  fill: var(--accent-color);
 }
 
 /*Section*/
@@ -370,8 +371,6 @@ img {
   width: 44px;
   height: 44px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
 }
 
