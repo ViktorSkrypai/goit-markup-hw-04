@@ -406,6 +406,7 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--svg-grey-color);
+  cursor: pointer;
 }
 
 .list-icon:hover,
@@ -557,6 +558,7 @@ img {
   border: none;
   text-align: center;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .main-buttons .item {
