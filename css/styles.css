@@ -24,6 +24,7 @@
   --hero-bg-color: #c4c4c4;
   --border-color: #eeeeee;
   --header-border-color: #ececec;
+  --svg-grey-color: #afb1b8;
 }
 
 body {
@@ -172,8 +173,12 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
-  background-image: url("../images/heroback.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heroback.jpg);
   background-color: var(--hero-bg-color);
 
   background-repeat: no-repeat;
@@ -318,7 +323,7 @@ img {
 
 .profession {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -328,11 +333,45 @@ img {
   background-color: var(--primary-bg-color);
 
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons-team {
+  display: flex;
+}
+
+.social-buttons-team .item {
+  margin-right: 10px;
+  height: 44px;
+  width: 44px;
+}
+
+.social-link-team {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  fill: var(--svg-grey-color);
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-buttons-team .item:last-child {
+  margin-right: 0px;
+}
+
+.social-link-team:hover,
+.social-link-team:focus {
+  background-color: var(--accent-color);
+  fill: var(--secondary-text-color);
 }
 
 /*Наши клиенты*/
@@ -347,19 +386,15 @@ img {
   justify-content: space-between;
 }
 
-.our-clients .item {
-  border: 1px solid #afb1b8;
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  cursor: pointer;
-}
-
-.list-icon {
-  width: 45px;
-  height: 50px;
-  margin-left: 63px;
-  margin-top: 20px;
+  fill: var(--svg-grey-color);
 }
 
 .list-icon:hover,
