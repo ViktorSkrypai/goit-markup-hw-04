@@ -406,8 +406,7 @@ img {
   cursor: pointer;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
